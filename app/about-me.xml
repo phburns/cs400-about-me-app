@@ -1,0 +1,39 @@
+<Page actionBarHidden="true" loaded="onLoaded" xmlns="http://schemas.nativescript.org/tns.xsd" class="bg-gray-100">
+    <GridLayout rows="auto, *, auto, auto" class="page">
+        <StackLayout row="0" class="header"></StackLayout>
+
+        <ScrollView row="1">
+            <StackLayout class="content">
+                <Label text="Bio" class="leading-none header-title mb-1 text-lg"></Label>
+                <StackLayout class="text-bubble w-full bg-gold rounded-xl p-4 mb-4">
+                    <Label textWrap='true' text="I'm Parker Burns and I'm currently a student at Pitt State University." class="text-base text-black" style="white-space: normal;"></Label>
+                </StackLayout>
+                <GridLayout columns="*, *" class='my-4'>
+                    <StackLayout col="0">
+                        <Image src="~/images/headshot2.jpg" class="w-full h-auto" stretch='fill' />
+                    </StackLayout>
+                    <StackLayout col="1" class="text-bubble w-full bg-red p-4">
+                        <Label textWrap='true' text="My major is currently Computer Science and I’m in my sophomore year right now." class="text-base/4 text-black" style="white-space: normal;"></Label>
+                    </StackLayout>
+                </GridLayout>
+        <StackLayout row="1" class="mt-4"></StackLayout>
+                <StackLayout class="text-bubble w-full bg-gold rounded-xl p-4 mb-4 mt-2">
+                    <Label textWrap='true' text="I'm currently interested in computers. I like to build my own computers as well as keyboards and fine-tune them to my liking." class="text-base text-black" style="white-space: normal;"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+        <StackLayout row="0" class="home-icon">
+            <Image src="https://img.icons8.com/ios-filled/50/000000/home--v2.png" class="home-icon" tap="navigateToMainPage"></Image>
+        </StackLayout>
+
+        <StackLayout row="1" class="mt-4"></StackLayout>
+
+        <StackLayout row="2" class="footer mt-4">
+            <StackLayout class="footer-container">
+                <Button text="Next" class="skills-button" tap="navigateToNext"></Button>
+                <Button text="Previous" class="skills-button" tap="navigateToPrevious"></Button>
+            </StackLayout>
+        </StackLayout>
+    </GridLayout>
+</Page>

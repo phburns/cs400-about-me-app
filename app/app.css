@@ -1,0 +1,80 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page {
+  background-color: #f0f0f0;
+}
+
+.header {
+  background-color: red;
+  padding: 10;
+}
+
+.header-title {
+  font-size: 36;
+  color: black;
+  text-align: center;
+}
+
+.footer {
+  background-color: red;
+  padding: 10;
+  text-align: center;
+}
+
+.headshot-container {
+  border: 2 solid black;
+  border-radius: 60;
+  text-align: center;
+  padding: 10;
+}
+
+.headshot {
+  width: 200;
+  height: auto;
+  border-radius: 60;
+  margin-bottom: 20;
+}
+
+Button.about-me-button {
+  font-size: 18;
+  font-weight: bold;
+  border-radius: 30;
+  background-color: red;
+  color: black;
+}
+
+Button.skills-button {
+  font-size: 18;
+  font-weight: bold;
+  border-radius: 30;
+  background-color: gold;
+  color: black;
+}
+
+Button.contact-me-button {
+  font-size: 18;
+  font-weight: bold;
+  border-radius: 30;
+  background-color: red;
+  color: black;
+}
+
+.home-icon {
+  width: 60;
+  height: 60;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
